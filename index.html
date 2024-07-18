@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algoritmos de Ordenamiento</title>
+  <link rel="stylesheet" href="./src/views/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="alert-container"></div>
+  <div class="container">
+    <h1>Algoritmos de Ordenamiento</h1>
+    <div>
+      <label for="fileInput">Seleccionar archivo:</label>
+      <input type="file" id="fileInput">
+      <button id="loadDataBtn">Cargar datos</button>
+    </div>
+    <div>
+      <label for="insertItem">Insertar elemento:</label>
+      <input type="text" id="insertItem">
+      <button id="insertArrayBtn">Insertar en Array</button>
+      <button id="insertLinkedListBtn">Insertar en LinkedList</button>
+    </div>
+    <div>
+      <label for="searchItem">Buscar elemento:</label>
+      <input type="text" id="searchItem">
+      <button id="searchArrayBtn">Buscar en Array</button>
+      <button id="searchLinkedListBtn">Buscar en LinkedList</button>
+    </div>
+    <div>
+      <button id="bubbleSortBtn">Ordenar con Bubble Sort</button>
+      <button id="mergeSortBtn">Ordenar con Merge Sort</button>
+      <button id="radixSortBtn">Ordenar con Radix Sort</button>
+    </div>
+    <div id="arrayInsertTime">Tiempo de inserción en Array: </div>
+    <div id="linkedListInsertTime">Tiempo de inserción en LinkedList: </div>
+    <div id="arraySearchTime">Tiempo de búsqueda en Array: </div>
+    <div id="linkedListSearchTime">Tiempo de búsqueda en LinkedList: </div>
+    <div id="sortTime">Tiempo de ordenamiento: </div>
+    <div class="chart-container">
+      <canvas id="sortChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
